@@ -1,0 +1,37 @@
+---
+title: "Hello, Quarto"
+format: html
+---
+
+## Markdown
+
+Markdown is an easy to read and write text format:
+
+- It's _plain text_ so works well with version control
+- It can be **rendered** into HTML, PDF, and more
+- Learn more at: <https://quarto.org/docs/authoring/>
+
+## Code Cell
+
+Here is a R code cell:
+
+```{r}
+library(ggplot2)
+ggplot(diamonds, aes(x = carat, y = price)) +
+  geom_point(alpha = 0.25, color = "steelblue") +
+  geom_smooth(method = "lm", se = TRUE, color = "firebrick") +
+  labs(
+    title = "Carat 与 Price 的关系",
+    x = "Carat",
+    y = "Price (USD)"
+  ) +
+  theme_minimal()
+```
+
+## Equation
+
+Use LaTeX to write equations:
+
+$$
+\chi' = \sum_{i=1}^n k_i s_i^2
+$$
